@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.okokkid.MainActivity">
+
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="140dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:contentDescription="@null"
+        android:src="@drawable/book_default_bg" />
+
+    <EditText
+        android:id="@+id/page_index"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/icon"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:hint="打开某页" />
+
+    <Button
+        android:id="@+id/sync_order"
+        android:layout_width="80dp"
+        android:layout_height="38dp"
+        android:layout_below="@id/page_index"
+        android:layout_centerHorizontal="true"
+        android:background="#88a5e38c"
+        android:padding="-5dp"
+        android:text="同步订单"
+        android:textColor="#FFF"
+        android:textSize="13sp" />
+
+    <Button
+        android:id="@+id/download"
+        android:layout_width="80dp"
+        android:layout_height="38dp"
+        android:layout_below="@id/sync_order"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:background="#88a5e38c"
+        android:padding="-5dp"
+        android:text="下载课本"
+        android:textColor="#FFF"
+        android:textSize="13sp" />
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="80dp"
+        android:layout_height="38dp"
+        android:layout_below="@id/download"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:background="#88a5e38c"
+        android:padding="-5dp"
+        android:text="删除课本"
+        android:textColor="#FFF"
+        android:textSize="13sp" />
+
+    <Button
+        android:id="@+id/cache_size"
+        android:layout_width="80dp"
+        android:layout_height="38dp"
+        android:layout_below="@id/delete"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:background="#88a5e38c"
+        android:padding="-5dp"
+        android:text="缓存大小"
+        android:textColor="#FFF"
+        android:textSize="13sp" />
+
+    <Button
+        android:id="@+id/clean_cache"
+        android:layout_width="80dp"
+        android:layout_height="38dp"
+        android:layout_below="@id/cache_size"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:background="#88a5e38c"
+        android:padding="-5dp"
+        android:text="清除缓存"
+        android:textColor="#FFF"
+        android:textSize="13sp" />
+
+    <Button
+        android:id="@+id/is_download"
+        android:layout_width="80dp"
+        android:layout_height="38dp"
+        android:layout_below="@id/clean_cache"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:background="#88a5e38c"
+        android:padding="-5dp"
+        android:text="是否已经下载"
+        android:textColor="#FFF"
+        android:textSize="13sp" />
+
+    <Button
+        android:id="@+id/has_update"
+        android:layout_width="80dp"
+        android:layout_height="38dp"
+        android:layout_below="@id/is_download"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:background="#88a5e38c"
+        android:padding="-5dp"
+        android:text="是否有更新"
+        android:textColor="#FFF"
+        android:textSize="13sp" />
+
+    <Button
+        android:id="@+id/catalog"
+        android:layout_width="80dp"
+        android:layout_height="38dp"
+        android:layout_below="@id/has_update"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:background="#88a5e38c"
+        android:padding="-5dp"
+        android:text="书本目录"
+        android:textColor="#FFF"
+        android:textSize="13sp" />
+
+    <Button
+        android:id="@+id/getItem"
+        android:layout_width="160dp"
+        android:layout_height="38dp"
+        android:layout_below="@id/download"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/delete"
+        android:background="#88a5e38c"
+        android:text="GET Book Item By Id"
+        android:textColor="#FFF"
+        android:textSize="13sp" />
+
+
+    <Button
+        android:id="@+id/removeDevices"
+        android:layout_width="160dp"
+        android:layout_height="38dp"
+        android:layout_below="@id/getItem"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/delete"
+        android:background="#88a5e38c"
+        android:text="解绑"
+        android:textColor="#FFF"
+        android:textSize="13sp" />
+</RelativeLayout>
